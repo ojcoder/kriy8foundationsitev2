@@ -27,7 +27,7 @@ app.config.from_pyfile('development.py')
 # 		return redirect(url, code = code)
 
 #@app.route("/", methods=['GET'])
-@app.route("/", methods=['GET'])
+@app.route("/home", methods=['GET'])
 def home():
 	return render_template('home.html', title='Kriy8 Foundation', nav='home')
 
